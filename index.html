@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <meta name="description" content="">
+
+        <meta name="keywords" content="">
+
+        <meta name="author" content="Matthew Sedlar">
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Matt Sedlar.net</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>        
+        <link href="styles.css" rel="stylesheet"/>
+
+    </head>
+
+    <body>
+    <script id="moduleTemplate" type="text/template">
+        <article class='module'>
+        <h2><%= title %></h2> 
+        <p><%= description %></p>
+	<figure class='crop'>
+		<img src=<%= image %>/>
+	</figure>
+        </article>
+    </script>
+
+        <header>
+            <div id="header_content" class="group">
+                <div id="title">Matt Sedlar</div>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#design">Design</a></li>
+                        <li>Web</li>
+                        <li>Writing</li>
+                    </ul>
+                </nav>
+            </div>    
+        </header>
+        
+        <main>
+            <section id="design" class="group">
+                <h1>DESIGN</h1>
+            </section>
+            <section id="web" class="group"></section>
+            <section id="writing" class="group"></section>
+        </main>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://underscorejs.org/underscore.js"></script>
+        <script src="http://backbonejs.org/backbone.js"></script>
+        <script src="js/app-model.js"></script>
+        <script src="js/app-view.js"></script>
+	<script src="js/app-routes.js"></script>
+        <script src="js/application.js"></script>        
+    </body>
+
+</html>
