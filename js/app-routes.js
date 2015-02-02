@@ -12,6 +12,7 @@ AppRouter = Backbone.Router.extend({
 	},
 	design:function(){
 		$('#design').fadeIn('slow');
+		$('#home').hide();
 	}
 });
 
