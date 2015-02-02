@@ -18,8 +18,8 @@ var designEx1 = new Module({
 
 var designEx2 = new Module({
     title: 'Annie Owl-kley',
-    description: 'Painting for my son\'s bedroom. Acrylic on canvas.',
-    image: ''
+    description: 'Painting for my son\'s bedroom. Acrylic on canvas.<br/>&nbsp;',
+    image: '"images/designEx2.jpg"'
 });
 
 var ModuleCollection = Backbone.Collection.extend({
