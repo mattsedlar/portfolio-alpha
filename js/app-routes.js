@@ -3,17 +3,20 @@
 AppRouter = Backbone.Router.extend({
 	routes: {
 		'': 'index',
-		'design': 'design'
+		'design': 'design',
+        'web': 'web'
 	},
 	index:function (){
-		$('#design').hide();
-		$('#web').hide();
-		$('#writing').hide();
+		$('#design, #web, #writing').hide();
 	},
 	design:function(){
 		$('#design').fadeIn('slow');
-		$('#home').hide();
-	}
+		$('#home, #web').hide();
+	},
+	web:function(){
+		$('#web').fadeIn('slow');
+		$('#home, #design').hide();
+	},    
 });
 
 new AppRouter;
