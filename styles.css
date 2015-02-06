@@ -64,7 +64,7 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
-main, header, #header_content, #header_content_narrow {
+main, header, #header_content {
     text-align: center;
     margin: 0 auto;
 }
@@ -169,14 +169,18 @@ article.module {
     box-sizing: border-box;
 }
 
+article.module img {
+	height:320px;
+}
+
+article.module p {
+    margin-top: 12px;
+}
+
 .crop {
 	width: 100%;
 	height: auto;
         overflow:hidden;
 	margin-top:12px;
-}
-
-article.module img {
-	height:320px;
 }
 

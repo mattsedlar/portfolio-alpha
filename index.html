@@ -25,11 +25,11 @@
     <body>
     <script id="moduleTemplate" type="text/template">
         <article class='module'>
-        <h2><%= title %></h2> 
+        <h3><%= title %></h3> 
+        <figure class='crop'>
+		  <img data-id='<%= id %>' src='<%= image %>' />
+	    </figure>
         <p><%= description %></p>
-	<figure class='crop'>
-		<img src=<%= image %>/>
-	</figure>
         </article>
     </script>
 

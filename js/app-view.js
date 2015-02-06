@@ -7,6 +7,9 @@ var ModuleView = Backbone.View.extend({
     render: function() {
         this.$el.append( this.template(this.model.toJSON()));
     },
+    grabLink: function(e) {
+        this.model.grabLink(e);
+    }
 });
 
 /* Design Views */
@@ -14,14 +17,14 @@ var ModuleView = Backbone.View.extend({
 var DesignCollectionView = Backbone.View.extend({
     initialize: function () { 
         this.render();
-        $('img').on('click', function() { alert("You clicked"); });        
     },
     render: function() {
-        this.collection.each(function(module){
-            var moduleView = new ModuleView({ model: module, el: $('#design') });
-        });
+        this.collection.forEach(this.addOne, this);
     },
- 
+    addOne: function(module){
+            var moduleView = new ModuleView({ model: module });
+            $("#design").append(moduleView.el);
+    }
 });
 
 var designCollectionView = new DesignCollectionView({ 
@@ -33,19 +36,19 @@ var designCollectionView = new DesignCollectionView({
 var SiteCollectionView = Backbone.View.extend({
     initialize: function () { 
         this.render();
-        $('img').on('click', function() { window.open(this.model.get('link'),'_blank'); });        
     },
     render: function() {
-        this.collection.each(function(module){
-            var moduleView = new ModuleView({ model: module, el: $('#web') });
-        });
+        this.collection.forEach(this.addOne, this);
     },
- 
+    addOne: function(module){
+            var moduleView = new ModuleView({ 
+                model: module,
+                events: { 'click img': 'grabLink' }            
+            });
+            $("#web").append(moduleView.el);
+    }
 });
 
-var siteCollectionView = new SiteCollectionView({ 
+var siteCollectionView = new SiteCollectionView({
 	collection: sitePortfolio
  });
-
-
-
