@@ -18,7 +18,7 @@ var Module = Backbone.Model.extend({
         var item = this.collection.get(id);
         $('main').css("opacity","0.2");
         $('.feature_image figure img').attr("src", item.get('image'));
-        $('.feature_image figure').css("display","block");
+        $('.feature_image figure').hide().fadeIn("slow");
     }
 });
 
