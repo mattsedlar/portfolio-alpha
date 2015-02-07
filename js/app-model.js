@@ -12,6 +12,13 @@ var Module = Backbone.Model.extend({
         var id = $(e.currentTarget).data("id");
         var item = this.collection.get(id);
         window.open(item.get('link'),'_blank');
+    },
+    featureImg: function(e) {
+        var id = $(e.currentTarget).data("id");
+        var item = this.collection.get(id);
+        $('main').css("opacity","0.2");
+        $('.feature_image figure img').attr("src", item.get('image'));
+        $('.feature_image figure').css("display","block");
     }
 });
 
@@ -27,6 +34,12 @@ var designs = [
     title: 'Annie Owl-kley',
     description: 'Painting for my son\'s bedroom. Acrylic on canvas.',
     image: 'images/designEx2.jpg'
+    },
+    {
+    id: 3,
+    title: 'Now Playing',
+    description: 'Facebook graphic to promote ACA enrollment events sponsored by SEIU-UHW.',
+    image: 'images/designEx3.jpg'
     }
 ];
 
