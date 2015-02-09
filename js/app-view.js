@@ -37,13 +37,6 @@ var designCollectionView = new DesignCollectionView({
 	collection: designPortfolio
  });
 
-/* CLOSING THE FEATURED IMAGE */
-
-$(".feature_image figure").click(function() {
-    $('.feature_image figure').hide();
-    $('main').css("opacity","inherit");
-});
-
 /* Web Views */
 
 var SiteCollectionView = Backbone.View.extend({

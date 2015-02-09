@@ -1,7 +1,7 @@
-(function() {
+$(function() {
 
-AppRouter = Backbone.Router.extend({
-	routes: {
+var AppRouter = new (Backbone.Router.extend({
+    routes: {
 		'': 'index',
 		'design': 'design',
         'web': 'web'
@@ -17,9 +17,15 @@ AppRouter = Backbone.Router.extend({
 		$('#web').fadeIn('slow');
 		$('#home, #design').hide();
 	},    
-});
+}));
 
-new AppRouter;
 Backbone.history.start();
 
-})();
+});
+
+/* CLOSING THE FEATURED IMAGE */
+
+$(".feature_image figure").click(function() {
+    $('.feature_image figure').hide();
+    $('main').css("opacity","inherit");
+});

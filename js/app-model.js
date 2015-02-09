@@ -40,7 +40,13 @@ var designs = [
     title: 'Now Playing',
     description: 'Facebook graphic to promote ACA enrollment events sponsored by SEIU-UHW.',
     image: 'images/designEx3.jpg'
-    }
+    }, 
+    {
+    id: 4,
+    title: 'The Underdog',
+    description: 'Composite image created in Photoshop for fundraising email.',
+    image: 'images/designEx4.jpg'
+    }    
 ];
 
 var sites = [
