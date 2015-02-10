@@ -208,3 +208,36 @@ article.module p {
     cursor: pointer;
 }
 
+/* MOBILE STYLES */
+
+@media (max-width:400px) {
+
+    article.module {
+        float:none;
+        display: block;
+        width: 100%;
+    }
+    
+
+    article.module img {
+        width:90%;
+        height: auto;
+    }    
+    
+    .feature_image figure {
+        width: 90%;
+        height: auto;
+        margin-top: -150px;
+        margin-left: -150px;
+    }
+    
+    #title { 
+        font-size: 12vw;
+        float: none;
+    }
+    
+    nav { float: none; }
+    
+    ul.nav li { font-size: 6vw;}
+    
+}
