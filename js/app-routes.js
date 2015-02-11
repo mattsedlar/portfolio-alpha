@@ -7,7 +7,7 @@ var AppRouter = new (Backbone.Router.extend({
         'web': 'web'
 	},
 	index:function (){
-		$('#design, #web, #writing').hide();
+		$('#design, #web').hide();
 	},
 	design:function(){
 		$('#design').fadeIn('slow');

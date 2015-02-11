@@ -125,6 +125,10 @@ h1 {
     margin-bottom: 40px;
 }
 
+section.design h1, section.web h1 {
+    opacity: 0;
+}
+
 h2 {
     font-size: 33px;
     line-height: 40px;
@@ -158,7 +162,7 @@ a:hover { color:#141250; }
 
 /* GRIDS */
 
-#home, #design, #web, #writing {
+#design, #web, #writing {
     display:none;
     padding: 12px;
     color: white;
@@ -168,7 +172,10 @@ a:hover { color:#141250; }
     clear:both;
 }
 
-#home { height: 561px; }
+#home { 
+    height: 561px;
+    background: url(images/homepage1.jpg) no-repeat;
+}
 
 article.module {
     float:left;
