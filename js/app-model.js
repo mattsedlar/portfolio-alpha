@@ -25,27 +25,27 @@ var Module = Backbone.Model.extend({
 var designs = [
     {
     id: 1,
-    title: 'Pirate Cat Puppet',
-    description: 'Puppet created from original design, printed, colored and made into a marionette',
-    image: 'images/designEx1.jpg'
-    },
-    {
-    id: 2,
-    title: 'Annie Owl-kley',
-    description: 'Painting for my son\'s bedroom. Acrylic on canvas.',
-    image: 'images/designEx2.jpg'
-    },
-    {
-    id: 3,
     title: 'Now Playing',
     description: 'Facebook graphic to promote ACA enrollment events sponsored by SEIU-UHW.',
     image: 'images/designEx3.jpg'
     }, 
     {
-    id: 4,
+    id: 2,
     title: 'The Underdog',
     description: 'Composite image created in Photoshop for fundraising email.',
     image: 'images/designEx4.jpg'
+    },
+    {
+    id: 3,
+    title: 'Pirate Cat Puppet',
+    description: 'Puppet created from original design, printed, colored and made into a marionette',
+    image: 'images/designEx1.jpg'
+    },
+    {
+    id: 4,
+    title: 'Annie Owl-kley',
+    description: 'Painting for my son\'s bedroom. Acrylic on canvas.',
+    image: 'images/designEx2.jpg'
     }    
 ];
 

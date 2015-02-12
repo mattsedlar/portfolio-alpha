@@ -4,18 +4,23 @@ var AppRouter = new (Backbone.Router.extend({
     routes: {
 		'': 'index',
 		'design': 'design',
-        'web': 'web'
+        'web': 'web',
+        'services': 'services'
 	},
 	index:function (){
-		$('#design, #web').hide();
+		$('#design, #web, #services').hide();
 	},
 	design:function(){
 		$('#design').fadeIn('slow');
-		$('#home, #web').hide();
+		$('#home, #web, #services').hide();
 	},
 	web:function(){
 		$('#web').fadeIn('slow');
-		$('#home, #design').hide();
+		$('#home, #design, #services').hide();
+	},
+	services:function(){
+		$('#services').fadeIn('slow');
+		$('#home, #design, #web').hide();
 	},    
 }));
 
