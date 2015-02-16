@@ -57,8 +57,8 @@ table {
 
 /* https://color.adobe.com/Copy-of-C-Autumn-Sunset-(based-on-Sunset-by-brunohstein)-color-theme-1938993/ */
 
-html { 
-    height: 100%; 
+html {
+    height: 100%;
     font-size: 14px;
 }
 
@@ -92,15 +92,15 @@ main, #header_content {
 
 header {
     padding-bottom: 1.171875%; /* 12 / 1024 */;
-    background: none; 
+    background: none;
 }
 
 header, h1, h2, h3 {
-    font-family: 'Fjalla One', sans-serif;  
-    text-transform: uppercase;    
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
 }
 
-nav { 
+nav {
 	padding: 2.34375%; /* 24 / 1024 */
 	float: right;
  }
@@ -123,7 +123,25 @@ ul.nav li:last-child {
 	display:inline;
 }
 
-h1 { 
+footer {
+	padding: 2.34375%; /* 24 / 1024 */
+}
+
+#ft-left, #ft-right {
+  display: inline;
+  width: 50%;
+}
+
+#ft-left {
+  text-align: left;
+  float: left;
+}
+
+#ft-right {
+  float: right;
+}
+
+h1 {
     font-size: 4.9em;
     line-height: 55px;
     margin-bottom: 4.39453125%; /* 45 / 1024 */
@@ -138,7 +156,7 @@ h2 {
     line-height: 40px;
 }
 
-h3 { 
+h3 {
     font-size: 2.2em;
     line-height: 30px;
 
@@ -180,7 +198,7 @@ a:hover { color:#141250; }
     clear:both;
 }
 
-#home { 
+#home {
     height: 561px;
     background: url(images/homepage1.jpg) no-repeat;
 }
@@ -232,35 +250,35 @@ article.module p {
         display: block;
         width: 100%;
     }
-    
+
 
     article.module img {
         width:90%;
         height: auto;
-    }  
+    }
 
     .feature_image figure img {
         margin-top: 150px;
         margin-left: 100px;
     }
-    
+
     .feature_image figure img {
         width: 60%;
         height: auto;
     }
-    
-    #title { 
+
+    #title {
         font-size: 12vw;
         float: none;
         padding: 12px;
         display: block;
     }
-    
-    nav { 
-        float: none; 
-        padding: 18px; 
+
+    nav {
+        float: none;
+        padding: 18px;
     }
-    
+
     ul.nav li { font-size: 6vw;}
-    
+
 }
