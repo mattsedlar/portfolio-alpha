@@ -107,7 +107,7 @@ nav {
 
 ul.nav li {
     display: inline;
-    padding-right: 17.543859649122806%; /* 50 / 285 */
+    padding-right: 45px;
     font-size: 4.9em;
     color: #080032;
 }
@@ -124,7 +124,8 @@ ul.nav li:last-child {
 }
 
 footer {
-	padding: 2.34375%; /* 24 / 1024 */
+	padding-top: 1.171875%; /* 12 / 1024 */
+    padding-bottom: 1.171875%; /* 12 / 1024 */
 }
 
 #ft-left, #ft-right {
@@ -138,6 +139,7 @@ footer {
 }
 
 #ft-right {
+    text-align: right;
   float: right;
 }
 
@@ -239,6 +241,23 @@ article.module p {
     margin-top: -250px;
     margin-left: -250px;
     cursor: pointer;
+}
+
+/* SOCIAL MEDIA */
+
+#git, #twitter {
+    float:right;
+    width:50px;
+    height:50px;
+}
+
+#git {
+    background: url(images/icons.png) bottom left;
+}
+
+#twitter {
+    background: url(images/icons.png) top right;
+    margin-right: 12px;
 }
 
 /* MOBILE STYLES */
