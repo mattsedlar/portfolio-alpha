@@ -128,19 +128,16 @@ footer {
     padding-bottom: 1.171875%; /* 12 / 1024 */
 }
 
-#ft-left, #ft-right {
-  display: inline;
-  width: 50%;
-}
-
 #ft-left {
-  text-align: left;
-  float: left;
+    text-align: left;
+    float: left;
+    width: 25%;
 }
 
 #ft-right {
     text-align: right;
-  float: right;
+    float: right;
+    width: 75%;
 }
 
 h1 {
@@ -245,7 +242,7 @@ article.module p {
 
 /* SOCIAL MEDIA */
 
-#git, #twitter {
+#git, #twitter, #linkedin {
     float:right;
     width:50px;
     height:50px;
@@ -257,7 +254,14 @@ article.module p {
 
 #twitter {
     background: url(images/icons.png) top right;
-    margin-right: 12px;
+}
+
+#linkedin {
+     background: url(images/icons.png) top left;   
+}
+
+#twitter, #linkedin {
+    margin-right: 1.171875%; /* 12 / 1024 */
 }
 
 /* MOBILE STYLES */
