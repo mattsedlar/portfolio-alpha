@@ -181,7 +181,6 @@ a:hover { color:#141250; }
 #design, #web, #services {
     display:none;
     padding: 12px;
-    color: white;
 }
 
 #design article:nth-child(3n+2), #web article:nth-child(3n+2) {
@@ -213,7 +212,7 @@ article.module p {
 .crop {
 	width: 100%;
 	height: auto;
-        overflow:hidden;
+    overflow:hidden;
 	margin-top:12px;
 }
 
