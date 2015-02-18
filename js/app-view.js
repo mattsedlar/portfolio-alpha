@@ -1,4 +1,6 @@
 var ModuleView = Backbone.View.extend({
+    className: 'module',
+    tagName: 'article',
     el: this.el,
     template: _.template($('#moduleTemplate').html()),
     initialize: function() {

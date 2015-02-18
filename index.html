@@ -19,23 +19,21 @@
         <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
         <link href="styles.css" rel="stylesheet"/>
-
+        
     </head>
 
     <body>
     <script id="moduleTemplate" type="text/template">
-        <article class='module'>
         <h3><%= title %></h3>
         <figure class='crop'>
 		  <img data-id='<%= id %>' src='<%= image %>' />
 	    </figure>
         <p><%= description %></p>
-        </article>
     </script>
 
         <header>
             <div id="header_content" class="group">
-                <div id="title"><a href="">Matt Sedlar</a></div>
+                <div id="title"><a href="http://mattsedlar.net">Matt Sedlar</a></div>
                 <nav>
                     <ul class="nav">
                         <li><a href="#design">Design</a></li>
@@ -55,27 +53,15 @@
                 <h1>SITES</h1>
             </section>
             <section id="services" class="group">
-                <h1>SERVICES</h1>
-                <h3>Skills</h3>
-                <ul>
-                    <li>Front-end design and web development</li>
-                    <li>Database management</li>
-                    <li>Social media consulting</li>
-                    <li>Analytics and insights</li>
-                    <li>Copywriting and editing</li>
-                </ul>
-                <h3>Contact Me</h3>
-                <p>Email: me[at]mattsedlar.net</p>
-                <p>Git: http://github.com/mattsedlar</p>
             </section>
 
-            <footer class="group">
-                <div id="ft-left"></div>
-                <div id="ft-right">
-                <a href="https://github.com/mattsedlar" target="_blank" id="git"></a>
-                <a href="http://twitter.com/mattslar" target="_blank" id="twitter"></a>
-                <a href="http://www.linkedin.com/pub/matthew-sedlar/7a/112/5a3/en" target="_blank" id="linkedin"></a>    
-                </div>
+            <footer>
+
+                <div id="git"><a href="https://github.com/mattsedlar" target="_blank">&nbsp;</a></div>
+                <div id="twitter"><a href="http://twitter.com/mattslar" target="_blank" id="twitter">&nbsp;</a></div>
+                <div id="linkedin"><a href="http://www.linkedin.com/pub/matthew-sedlar/7a/112/5a3/en" target="_blank" id="linkedin">&nbsp;</a></div>  
+                
+                <p>&copy; 2015 Matt Sedlar</p>
             </footer>
 
         </main>
@@ -86,7 +72,7 @@
                 </figure>
             </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
         <script src="http://underscorejs.org/underscore.js"></script>
         <script src="http://backbonejs.org/backbone.js"></script>
         <script src="js/app-model.js"></script>

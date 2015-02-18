@@ -126,27 +126,17 @@ ul.nav li:last-child {
 footer {
 	padding-top: 1.171875%; /* 12 / 1024 */
     padding-bottom: 1.171875%; /* 12 / 1024 */
+    height: auto;
 }
 
-#ft-left {
-    text-align: left;
-    float: left;
-    width: 25%;
-}
-
-#ft-right {
-    text-align: right;
-    float: right;
-    width: 75%;
-}
 
 h1 {
     font-size: 4.9em;
     line-height: 55px;
-    margin-bottom: 4.39453125%; /* 45 / 1024 */
+    margin-bottom: 50px;
 }
 
-section.design h1, section.web h1, section.services h1 {
+section#design h1, section#web h1, section#services h1 {
     opacity: 0;
 }
 
@@ -156,8 +146,9 @@ h2 {
 }
 
 h3 {
-    font-size: 2.2em;
+    font-size: 1.8em;
     line-height: 30px;
+    color:black;
 
 }
 
@@ -193,8 +184,8 @@ a:hover { color:#141250; }
     color: white;
 }
 
-#design:nth-child(2n):after, #web:nth-child(2n):after {
-    clear:both;
+#design article:nth-child(3n+2), #web article:nth-child(3n+2) {
+    clear:left;
 }
 
 #home {
@@ -243,9 +234,11 @@ article.module p {
 /* SOCIAL MEDIA */
 
 #git, #twitter, #linkedin {
-    float:right;
+    display:inline-block;
     width:50px;
     height:50px;
+    margin-bottom: 5%;
+    margin-top: 5%;    
 }
 
 #git {
@@ -260,18 +253,42 @@ article.module p {
      background: url(images/icons.png) top left;   
 }
 
-#twitter, #linkedin {
-    margin-right: 1.171875%; /* 12 / 1024 */
+#twitter, #git {
+    margin-right: 2.34375%; /* 24 / 1024 */
 }
 
 /* MOBILE STYLES */
 
-@media (max-width:400px) {
+@media screen and (max-width:700px) {
+    
+    article.module {
+        width: 50%;
+    }
+
+    #design article:nth-child(3n+2), #web article:nth-child(3n+2) {
+        clear:none;
+    }
+
+    #design article:nth-child(3n+1), #web article:nth-child(3n+1) {
+        clear:left;
+    }    
+    
+    #title {
+        font-size: 7vw;
+    }
+    
+    ul.nav li {
+        font-size: 7vw;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
 
     article.module {
         float:none;
         display: block;
-        width: 100%;
+        width: inherit;
     }
 
 
@@ -289,9 +306,9 @@ article.module p {
         width: 60%;
         height: auto;
     }
-
+    
     #title {
-        font-size: 12vw;
+        font-size: 11vw;
         float: none;
         padding: 12px;
         display: block;
@@ -299,9 +316,10 @@ article.module p {
 
     nav {
         float: none;
-        padding: 18px;
+        padding: 16px;
     }
 
-    ul.nav li { font-size: 6vw;}
+    ul.nav li { font-size: 5vw;}    
+
 
 }
