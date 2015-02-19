@@ -133,7 +133,7 @@ footer {
 
 h1 {
     font-size: 4.9em;
-    line-height: 55px;
+    line-height: 1.12244897959em;
     margin-bottom: 50px;
 }
 
@@ -143,19 +143,19 @@ section#design h1, section#web h1, section#services h1 {
 
 h2 {
     font-size: 3.3em;
-    line-height: 40px;
+    line-height: 1.21212121212em;
 }
 
 h3 {
     font-size: 1.8em;
-    line-height: 30px;
+    line-height: 1.66666666667em;
     color:black;
 
 }
 
 p {
     font-size:1.4em;
-    line-height: 20px;
+    line-height: 1.42857142857em;
 }
 
 ul li {
@@ -259,7 +259,7 @@ article.module p {
 
 /* MOBILE STYLES */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:840px) {
     
     article.module {
         width: 50%;
@@ -281,9 +281,13 @@ article.module p {
         font-size: 7vw;
     }
     
+    h1 { margin-bottom: 25px; }
+    
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:560px) {
+    
+    h1 { margin-bottom: 75px; }
 
     article.module {
         float:none;
@@ -319,7 +323,11 @@ article.module p {
         padding: 16px;
     }
 
-    ul.nav li { font-size: 5vw;}    
+    ul.nav li { font-size: 6vw;}    
 
 
+}
+
+@media screen and (max-width: 360px) {
+    h1 { margin-bottom: 50px; }    
 }
