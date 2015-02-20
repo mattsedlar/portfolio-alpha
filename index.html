@@ -56,10 +56,12 @@
             </section>
 
             <footer>
-
-                <div id="git"><a href="https://github.com/mattsedlar" target="_blank">&nbsp;</a></div>
-                <div id="twitter"><a href="http://twitter.com/mattslar" target="_blank" id="twitter">&nbsp;</a></div>
-                <div id="linkedin"><a href="http://www.linkedin.com/pub/matthew-sedlar/7a/112/5a3/en" target="_blank" id="linkedin">&nbsp;</a></div>  
+                
+                <ul id="social-media">
+                    <li id="git"><a href="https://github.com/mattsedlar" target="_blank"></a></li>
+                    <li id="twitter"><a href="http://twitter.com/mattslar" target="_blank" id="twitter"></a></li>
+                    <li id="linkedin"><a href="http://www.linkedin.com/pub/matthew-sedlar/7a/112/5a3/en" target="_blank" id="linkedin"></a></li>                    
+                </ul>
 
             </footer>
 
@@ -71,9 +73,12 @@
                 </figure>
             </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="http://underscorejs.org/underscore.js"></script>
-        <script src="http://backbonejs.org/backbone.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            if (!window.jQuery) document.write('<script type="text/javascript" src="js/jquery.min.js"><\/script>');
+        </script>
+        <script src="js/underscore.js"></script>
+        <script src="js/backbone.js"></script>
         <script src="js/app-model.js"></script>
         <script src="js/app-view.js"></script>
         <script src="js/app-routes.js"></script>

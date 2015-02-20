@@ -124,12 +124,6 @@ ul.nav li:last-child {
 	display:inline;
 }
 
-footer {
-	padding-top: 1.171875%; /* 12 / 1024 */
-    padding-bottom: 1.171875%; /* 12 / 1024 */
-    height: auto;
-}
-
 
 h1 {
     font-size: 4.9em;
@@ -233,13 +227,29 @@ article.module p {
 
 /* SOCIAL MEDIA */
 
-#git, #twitter, #linkedin {
-    display:inline-block;
-    width:50px;
-    height:50px;
-    margin-bottom: 5%;
-    margin-top: 5%;    
+footer {
+	padding-top: 1.171875%; /* 12 / 1024 */
+    padding-bottom: 1.171875%; /* 12 / 1024 */
+    height: auto;
 }
+
+ul#social-media li {
+    margin: 6px 8px 6px 0;
+    padding: 0;
+    list-style: none;
+    position: static;
+    top: 0;
+}
+
+ul#social-media li:last-child {
+    margin-right: 0px;
+}
+
+ul#social-media li, ul#social-media li a {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+ } 
 
 #git {
     background: url(images/icons.png) bottom left;
@@ -251,10 +261,6 @@ article.module p {
 
 #linkedin {
      background: url(images/icons.png) top left;   
-}
-
-#twitter, #git {
-    margin-right: 2.34375%; /* 24 / 1024 */
 }
 
 /* MOBILE STYLES */
