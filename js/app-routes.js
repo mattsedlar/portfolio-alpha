@@ -30,7 +30,9 @@ Backbone.history.start();
 
 /* CLOSING THE FEATURED IMAGE */
 
-$(".feature_image figure").click(function() {
+$(document).ready( function() {
+    $(".feature_image figure").click(function() {
     $('.feature_image figure').hide();
     $('main').css("opacity","inherit");
+    });
 });
