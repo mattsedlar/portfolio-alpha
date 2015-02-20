@@ -263,6 +263,10 @@ ul#social-media li, ul#social-media li a {
      background: url(images/icons.png) top left;   
 }
 
+#email {
+      background: url(images/icons.png) bottom right;    
+}
+
 /* MOBILE STYLES */
 
 @media screen and (max-width:840px) {

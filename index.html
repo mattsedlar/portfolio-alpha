@@ -60,7 +60,8 @@
                 <ul id="social-media">
                     <li id="git"><a href="https://github.com/mattsedlar" target="_blank"></a></li>
                     <li id="twitter"><a href="http://twitter.com/mattslar" target="_blank" id="twitter"></a></li>
-                    <li id="linkedin"><a href="http://www.linkedin.com/pub/matthew-sedlar/7a/112/5a3/en" target="_blank" id="linkedin"></a></li>                    
+                    <li id="linkedin"><a href="http://www.linkedin.com/pub/matthew-sedlar/7a/112/5a3/en" target="_blank" id="linkedin"></a></li>
+                    <li id="email"><a href="#"></a></li>
                 </ul>
 
             </footer>
@@ -76,6 +77,17 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script type="text/javascript">
             if (!window.jQuery) document.write('<script type="text/javascript" src="js/jquery.min.js"><\/script>');
+            $(document).ready( function() {
+               $("li#email").on("click", function() {
+                    var e = "sedlar";
+                    var f = "m";
+                    var a = "@";
+                    var d = "gmail.com";
+                    var c = ".com";
+                    var h = 'mailto:' + e + f + a + d + c;
+                   $(this).children('a').attr('href',h);
+               }); 
+            });
         </script>
         <script src="js/underscore.js"></script>
         <script src="js/backbone.js"></script>
