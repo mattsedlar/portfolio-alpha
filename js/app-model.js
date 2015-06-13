@@ -28,7 +28,7 @@ var designs = [
     title: 'Now Playing',
     description: 'Facebook graphic to promote ACA enrollment events sponsored by SEIU-UHW.',
     image: 'images/designEx3.jpg'
-    }, 
+    },
     {
     id: 2,
     title: 'The Underdog',
@@ -46,14 +46,14 @@ var designs = [
     title: 'Annie Owl-kley',
     description: 'Painting for my son\'s bedroom. Acrylic on canvas.',
     image: 'images/designEx2.jpg'
-    }    
+    }
 ];
 
 var sites = [
     {
     id: 1,
     title: 'The Geekticket',
-    description: 'Personal blog set up on the Joomla platform using a custom template. Mobile optimized.',
+    description: 'Personal blog set up on Drupal using a custom template with Boostrap. Mobile optimized.',
     image: 'images/siteEx1.jpg',
     link: 'http://thegeekticket.com'
     },
@@ -66,11 +66,18 @@ var sites = [
     },
     {
     id: 3,
+    title: 'Take the Medi-Cal Quiz',
+    description: 'Web application built using Twitter Bootstrap and Backbone.js.',
+    image: 'images/siteEx4.jpg',
+    link: 'http://seiuuhw.org/medi-cal-quiz/'
+    },
+    {
+    id: 4,
     title: 'CEPRData',
     description: 'Site set up on the WordPress platform using a modified version of the Annotum template.',
     image: 'images/siteEx3.jpg',
     link: 'http://ceprdata.org/'
-    }    
+    }
 ];
 
 var ModuleCollection = Backbone.Collection.extend({
