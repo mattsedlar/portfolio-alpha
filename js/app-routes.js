@@ -3,25 +3,20 @@ $(function() {
 var AppRouter = new (Backbone.Router.extend({
     routes: {
 		'': 'index',
-		'design': 'design',
-        'web': 'web',
-        'services': 'services'
+		'analysis': 'analysis',
+        'web': 'web'
 	},
 	index:function (){
-		$('#design, #web, #services').hide();
+		$('#analysis, #web').hide();
 	},
-	design:function(){
-		$('#design').fadeIn('slow');
-		$('#home, #web, #services').hide();
+	analysis:function(){
+		$('#analysis').fadeIn('slow');
+		$('#home, #web').hide();
 	},
 	web:function(){
 		$('#web').fadeIn('slow');
-		$('#home, #design, #services').hide();
-	},
-	services:function(){
-		$('#services').fadeIn('slow');
-		$('#home, #design, #web').hide();
-	},    
+		$('#home, #analysis').hide();
+	}
 }));
 
 Backbone.history.start();

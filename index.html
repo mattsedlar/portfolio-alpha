@@ -16,8 +16,8 @@
 
         <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
-        <link href="styles.css" rel="stylesheet"/>
-        
+        <link href="styles/styles.css" rel="stylesheet"/>
+
     </head>
 
     <body>
@@ -34,8 +34,8 @@
                 <div id="title"><a href="http://mattsedlar.net">Matt Sedlar</a></div>
                 <nav>
                     <ul class="nav">
-                        <li><a href="#web">Sites</a></li>
-                        <li><a href="#design">Design</a></li>
+                        <li><a href="#web">Web</a></li>
+                        <li><a href="#analysis">Analysis</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,17 +43,16 @@
 
         <main>
 	    <section id="home"></section>
-            <section id="design" class="group">
-        		<h1>DESIGN</h1>
+            <section id="analysis" class="group">
+        		<h1>ANALYSIS</h1>
+                <p><a target="blank" href="http://rpubs.com/sedlarm/RepData_PeerAssessment2">Floods and Tornadoes Cause The Most Harm to Economy, Public Health in the U.S.</a>, RPubs, August 2015<p>
 	       </section>
             <section id="web" class="group">
-                <h1>SITES</h1>
-            </section>
-            <section id="services" class="group">
+                <h1>WEB</h1>
             </section>
 
             <footer>
-                
+
                 <ul id="social-media">
                     <li id="git"><a href="https://github.com/mattsedlar" target="_blank"></a></li>
                     <li id="twitter"><a href="http://twitter.com/mattslar" target="_blank" id="twitter"></a></li>
@@ -83,7 +82,7 @@
                     var c = ".com";
                     var h = 'mailto:' + e + f + a + d + c;
                    $(this).children('a').attr('href',h);
-               }); 
+               });
             });
         </script>
         <script src="js/underscore.js"></script>

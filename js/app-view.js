@@ -17,41 +17,20 @@ var ModuleView = Backbone.View.extend({
     }
 });
 
-/* Design Views */
-
-var DesignCollectionView = Backbone.View.extend({
-    initialize: function () { 
-        this.render();
-    },
-    render: function() {
-        this.collection.forEach(this.addOne, this);
-    },
-    addOne: function(module){
-            var moduleView = new ModuleView({ 
-                model: module,
-                events: { 'click img': 'featureImg' }  
-            });
-            $("#design").append(moduleView.el);
-    }
-});
-
-var designCollectionView = new DesignCollectionView({ 
-	collection: designPortfolio
- });
 
 /* Web Views */
 
 var SiteCollectionView = Backbone.View.extend({
-    initialize: function () { 
+    initialize: function () {
         this.render();
     },
     render: function() {
         this.collection.forEach(this.addOne, this);
     },
     addOne: function(module){
-            var moduleView = new ModuleView({ 
+            var moduleView = new ModuleView({
                 model: module,
-                events: { 'click img': 'grabLink' }            
+                events: { 'click img': 'grabLink' }
             });
             $("#web").append(moduleView.el);
     }
