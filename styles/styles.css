@@ -1,0 +1,293 @@
+/* https://color.adobe.com/Copy-of-C-Autumn-Sunset-(based-on-Sunset-by-brunohstein)-color-theme-1938993/ */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  font-size: 16px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top center, #FAB300, #D95335);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Libre Baskerville", serif;
+  font-size: 62.5%; }
+
+main, #header_content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 90%; }
+
+#header_content {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  z-index: 1; }
+
+header {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1.171875%;
+  /* 12 / 1024 */
+  background: none; }
+
+header, h1, h2, h3 {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase; }
+
+nav {
+  padding: 2.34375%;
+  /* 24 / 1024 */
+  float: right; }
+
+ul.nav li {
+  display: inline;
+  padding-right: 45px;
+  font-size: 6.4em; }
+ul.nav li:first-child:after {
+  padding-left: 45px;
+  color: #999999;
+  content: "|"; }
+ul.nav a, ul.nav a:hover {
+  color: #080032; }
+ul.nav li:last-child {
+  padding-right: 0; }
+
+#title {
+  font-size: 6.4em;
+  padding: 2.34375%;
+  /* 24 / 1024 */
+  float: left;
+  display: inline; }
+  #title a, #title a:hover {
+    color: #080032; }
+
+h1 {
+  font-size: 6.4em;
+  line-height: 1.12244897959em;
+  margin-bottom: 50px; }
+
+section#design h1, section#web h1, section#services h1 {
+  opacity: 0; }
+
+h2 {
+  font-size: 4.8em;
+  line-height: 1.21212121212em; }
+
+h3 {
+  font-size: 2.4em;
+  line-height: 1.66666666667em;
+  color: black; }
+
+p {
+  font-size: 1.6em;
+  line-height: 1.42857142857em; }
+
+ul li {
+  font-size: 2.8em; }
+
+a {
+  text-decoration: none;
+  color: #FFF; }
+  a:hover {
+    color: #f2f2f2; }
+
+/* CLEARFIX */
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* GRIDS */
+#web, #analysis {
+  display: none;
+  padding: 12px; }
+
+#analysis {
+  text-align: left; }
+  #analysis p {
+    margin-bottom: 12px; }
+
+#web article:nth-child(3n+2) {
+  clear: left; }
+
+#home {
+  height: 561px;
+  background: url(../images/homepage1.jpg) no-repeat; }
+
+article.module {
+  float: left;
+  width: 33.33%;
+  padding: 12px;
+  text-align: left;
+  box-sizing: border-box; }
+  article.module img {
+    height: 320px;
+    cursor: pointer; }
+  article.module p {
+    margin-top: 12px; }
+
+.crop {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 12px; }
+
+/* FEATURED IMAGE */
+.feature_image figure {
+  display: none;
+  position: fixed;
+  width: 500px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+  cursor: pointer; }
+
+/* SOCIAL MEDIA */
+footer {
+  padding-top: 1.171875%;
+  /* 12 / 1024 */
+  padding-bottom: 1.171875%;
+  /* 12 / 1024 */
+  height: auto;
+  margin-top: 12px;
+  border-top: 1px solid #FFF; }
+
+ul#social-media li {
+  margin: 6px 8px 6px 0;
+  padding: 0;
+  list-style: none;
+  position: static;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  display: inline-block; }
+ul#social-media li:last-child {
+  margin-right: 0px; }
+
+#git {
+  background: url(../images/icons.png) bottom left; }
+
+#twitter {
+  background: url(../images/icons.png) top right; }
+
+#linkedin {
+  background: url(../images/icons.png) top left; }
+
+#email {
+  background: url(../images/icons.png) bottom right; }
+
+/* MOBILE STYLES */
+@media screen and (max-width: 840px) {
+  article.module {
+    width: 50%; }
+
+  #design article:nth-child(3n+2), #web article:nth-child(3n+2) {
+    clear: none; }
+
+  #design article:nth-child(3n+1), #web article:nth-child(3n+1) {
+    clear: left; }
+
+  #title {
+    font-size: 6vw; }
+
+  ul.nav li {
+    font-size: 6vw; }
+
+  h1 {
+    margin-bottom: 25px; } }
+@media screen and (max-width: 560px) {
+  h1 {
+    margin-bottom: 75px; }
+
+  article.module {
+    float: none;
+    display: block;
+    width: inherit; }
+    article.module img {
+      width: 90%;
+      height: auto; }
+
+  .feature_image figure img {
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 60%;
+    height: auto; }
+
+  #title {
+    font-size: 11vw;
+    float: none;
+    padding: 12px;
+    display: block; }
+
+  nav {
+    float: none;
+    padding: 16px; }
+    nav ul.nav li {
+      font-size: 6vw;
+      padding-right: 0px; } }
+@media screen and (max-width: 360px) {
+  h1 {
+    margin-bottom: 50px; }
+
+  ul.nav li:first-child:after {
+    padding-right: 0px;
+    content: ""; } }
+
+/*# sourceMappingURL=styles.css.map */

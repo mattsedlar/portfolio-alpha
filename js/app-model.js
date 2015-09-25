@@ -32,20 +32,27 @@ var sites = [
     },
     {
     id: 2,
+    title: 'SEIU-UHW Wage Calculator',
+    description: 'Custom-built app using JQuery and Bootstrap .js libraries to highlight wage differences.',
+    image: 'images/siteEx5.jpg',
+    link: 'http://seiuuhw.org/calculators/kaiser-optical-calculator'
+    },
+    {
+    id: 3,
     title: 'Let\'s Learn German Together',
     description: 'Custom-built site using PHP, JavaScript and JQuery to promote learning.',
     image: 'images/siteEx2.jpg',
     link: 'http://letslearn-german.info'
     },
     {
-    id: 3,
+    id: 4,
     title: 'Take the Medi-Cal Quiz',
     description: 'Web application built using Twitter Bootstrap and Backbone.js.',
     image: 'images/siteEx4.jpg',
     link: 'http://seiuuhw.org/medi-cal-quiz/'
     },
     {
-    id: 4,
+    id: 5,
     title: 'CEPRData',
     description: 'Site set up on the WordPress platform using a modified version of the Annotum template.',
     image: 'images/siteEx3.jpg',
