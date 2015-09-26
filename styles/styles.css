@@ -214,7 +214,8 @@ ul#social-media li {
   padding: 0;
   list-style: none;
   position: static;
-  top: 0;
+  top: 0; }
+ul#social-media li, ul#social-media li a {
   height: 50px;
   width: 50px;
   display: inline-block; }
